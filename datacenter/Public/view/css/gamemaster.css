@@ -1,0 +1,312 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	line-height: 100%;
+	font-family: Arial, sans-serif;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+select {
+	border: 1px solid;
+	border-color: #A2BAC0 #B8D0D6 #B8D0D6 #A2BAC0;
+}
+
+.divGap {
+	width: 100%;
+	height: 30px;
+	background-position: 100% 0;
+	background: url(images/order_down.gif) no-repeat left;
+	cursor: pointer;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 30px;
+	overflow: hidden;
+	color: #08575B;
+}
+
+.textInput, input.focus, input.required, input.error, input.readonly, input.disabled, textarea.focus, textarea.required, textarea.error, textarea.readonly, textarea.disabled {
+	padding: 2px;
+	margin: 0;
+	line-height: 15px;
+	font-size: 12px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.textInput, .textArea {
+	border-color: #a2bac0 #b8d0d6 #b8d0d6 #a2bac0;
+	background-color: #FFF;
+}
+
+input {
+	border: 1px solid #CCC;
+}
+
+p {
+	margin: 10px;
+}
+
+.mg {
+	margin-left: 10px;
+}
+
+.divUser1 {
+	float: left;
+	overflow-y: auto;
+}
+
+#divUserLeft {
+	float: left;
+}
+
+.tabTh {
+	background-color: #F3F1F2;
+	height: 30px;
+}
+
+.table2 th {
+	color: #FFFFFF;
+	border-right: 1px solid #E1E1E1;
+	border-bottom: 1px solid #E1E1E1;
+	border-top: 1px solid #E1E1E1;
+	text-align: left;
+	text-align: center;
+	font-family: "宋体","Arail";
+	background-color: #029abb;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+.table2 td {
+	border-right: 1px solid #E1E1E1;
+	border-bottom: 1px solid #E1E1E1;
+	background: #fff;
+	font-size: 12px;
+	padding: 3px 3px 3px 6px;
+	word-wrap: break-word;
+	white-space: normal;
+	text-align: center;
+}
+
+.previews {
+	width: 100px;
+}
+
+.clear {
+	clear: both;
+}
+
+.divStall2 {
+	width: 420px;
+	float: right;
+	height: 550px;
+	overflow-y: auto;
+}
+
+#left1 {
+	width: 344px;
+	height: 600px;
+	float: left;
+	background-color: #FFFFFF;
+	padding: 30px;
+}
+
+#right1 {
+	width: 980px;
+	height: 600px;
+	float: left;
+	background-color: #FFFFFF;
+	padding: 30px;
+}
+
+#divRole1 {
+	background: url(images/role.png) no-repeat left;
+	width: 337px;
+	height: 500px;
+	z-index: 1;
+	position: relative;
+}
+
+#divRole1_1 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 19px;
+	top: 135px;
+}
+
+#divRole1_2 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 19px;
+	top: 190px;
+}
+
+#divRole1_3 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 19px;
+	top: 246px;
+}
+
+#divRole1_4 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 19px;
+	top: 300px;
+}
+
+#divRole1_5 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 19px;
+	top: 355px;
+}
+
+#divRole1_6 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 264px;
+	top: 135px;
+}
+
+#divRole1_7 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 264px;
+	top: 190px;
+}
+
+#divRole1_8 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 264px;
+	top: 246px;
+}
+
+#divRole1_9 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 264px;
+	top: 300px;
+}
+
+#divRole1_10 {
+	background: url(images/equip.png) no-repeat left;
+	width: 44px;
+	height: 42px;
+	z-index: 2;
+	Position: absolute;
+	left: 264px;
+	top: 355px;
+}
+
+.selectServer {
+	width: 110px;
+}
+
+#divTableRole2 {
+	width: 370px;
+	height: 520px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+}
+
+.wrap {
+	padding: 5px;
+}
+
+.wrap select {
+	height: 30px;
+	line-height: 30px;
+	margin-right: 20px;
+}
+
+.wrap .sub, .sub {
+	height: 30px;
+	border: 1px solid #a2bac0;
+	margin-right: 20px;
+	margin-left: 5px;
+	width: 60px;
+	cursor: pointer;
+}
+
+.wrap input[type=text]{
+	height: 30px;
+	border: 1px solid #a2bac0;
+	margin-right: 20px;
+	margin-left: 5px;
+}
+
+.left {
+	width: 510px;
+	height: 700px;
+	float: left;
+	padding: 0 10px 0px 5px;
+}
+
+.right {
+	width: 900px;
+	height: 800px;
+	float: left;
+	padding: 0 10px 0px 5px;
+}
+
+.mgr {
+	margin-right: 5px;
+}
+
+.cell {
+	width: 300px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.radio_h {
+	margin: 0 auto 20px auto;
+	width: 200px;
+}
+
+.btmgr {
+	margin-right: 100px;
+	margin-left: 30px;
+}
+
+.r {
+	float: right;
+}

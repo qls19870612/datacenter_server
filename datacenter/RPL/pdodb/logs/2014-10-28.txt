@@ -1,0 +1,260 @@
+Time : 04:32:16
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:32:11
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:31:11
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:31:09
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:30:46
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:30:23
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:30:01
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:29:29
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:28:58
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:28:57
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:28:11
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:27:48
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:27:18
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:26:19
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:26:16
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:26:07
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:26:06
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:25:31
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:24:31
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:22:50
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:22:39
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:21:51
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:20:48
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:20:08
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:20:04
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:19:47
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:19:29
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:19:26
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:17:36
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:17:22
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:14:14
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:14:12
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:14:10
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:14:09
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:13:27
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:13:24
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:12:34
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:11:19
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:53
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:51
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:48
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:24
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:21
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:20
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:15
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:12
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:10
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:10:08
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:09:50
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:09:49
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:09:49
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:09:44
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:09:36
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:09:34
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:09:11
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:09:09
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:09:08
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:08:23
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:08:13
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:29
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:22
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:21
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:19
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:14
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:12
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:07
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:07
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:07
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:06
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:06
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:05
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:05
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:05
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:05
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:04
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:04
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:03
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:02
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:07:00
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:06:27
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:06:06
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:05:48
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:05:19
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:05:12
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:05:09
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:05:01
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+Time : 04:04:55
+SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111

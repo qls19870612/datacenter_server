@@ -1,0 +1,38 @@
+<{include file='header.php'}>
+<br />
+<fieldset style='width:98%;margin:0 auto'>
+	<legend style='font-size:16px;font-weight:bold;margin-bottom:20px;'><font color='red'><{$GAME_LIST[$game_db].NAME}></font>服务器开启一览</legend>
+	<{foreach from=$serverlist item=item key=platform}>
+		<p class='serverlist_p'><{$platform}></p>
+		<hr style='background:#000'>
+		<{foreach from=$item item=server}>
+			<div class='serverlist_div'><center><font size=3><{$server.ServerID}>-<{$server.ServerName}></font><br /><{$server.openday}></center></div>
+		<{/foreach}>
+		<br clear='all' />
+	<{/foreach}>
+	<p></p>
+</fieldset>
+<p>iWorldId检测</p>
+<{if $QQ}>
+	<p><font color='red'>QQ服务器已检测,以下服务器iWorldId不存在或有误</font></p>
+	<p style='color:red'>
+		<{foreach from=$QQ item=item}>
+			<{$item.ServerID}>-<{$item.ServerName}><br />
+		<{/foreach}>
+	</p>
+<{else}>
+	<p><font color='green'>QQ服务器已检测,iWorldId正常</font></p>
+<{/if}>
+<p>-----------------------------</p>
+<{if $QQunion}>
+	<p><font color='red'>QQ服务器已检测,以下服务器iWorldId不存在或有误</font></p>
+	<p style='color:red'>
+		<{foreach from=$QQunion item=item}>
+			<{$item.ServerName}><br />
+		<{/foreach}>
+	</p>
+<{else}>
+	<p><font color='green'>QQunion服务器已检测,iWorldId正常</font></p>
+<{/if}>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<{include file='footer.php'}>

@@ -1,0 +1,204 @@
+/* lyl@2013-12-11 */
+
+body { margin-top: 50px; }
+
+body, h1,h2,h3,h4,h5,h6{font-family: Microsoft YaHei,"微软雅黑",Lucida,Verdana,Hiragino Sans GB,STHeiti,WenQuanYi Micro Hei,Droid Sans Fallback,SimSun,sans-serif;}
+
+#wrapper {padding-left: 0;}
+#page-wrapper {width: 100%; padding: 5px 15px;}
+#wrapper .navbar-brand{padding:15px; background:none;}
+
+
+/* Nav Messages */
+.messages-dropdown .dropdown-menu .message-preview .avatar,
+.messages-dropdown .dropdown-menu .message-preview .name,
+.messages-dropdown .dropdown-menu .message-preview .message,
+.messages-dropdown .dropdown-menu .message-preview .time {display: block;}
+.messages-dropdown .dropdown-menu .message-preview .avatar {float: left; margin-right: 15px;}
+.messages-dropdown .dropdown-menu .message-preview .name {font-weight: bold;}
+.messages-dropdown .dropdown-menu .message-preview .message {font-size: 12px;}
+.messages-dropdown .dropdown-menu .message-preview .time {font-size: 12px;}
+
+
+/* Select Game Menu */
+#selectGame .selecter{ background: none repeat scroll 0 0 #080808; height: 50px; left: 138px; top:0; position: absolute; width: 160px; padding: 0 5px}
+#selectGame .selecter .icon_wrap{width: 50px; height: 50px; float: left;}
+#selectGame .selecter .icon_wrap img{ width: 40px; height: 40px; margin: 5px; border-radius: 6px;}
+#selectGame .selecter .gamename{ float: left; color: #FFFFFF}
+#selectGame .selecter .gamename p{ margin: 5px; line-height: 40px; font-size: 14px; overflow: hidden; width: 90px; height: 40px}
+#selectGame .selecter .message-preview span{display: block;}
+#selectGame .selecter .message-preview .avatar{ float: left; margin-right: 15px}
+#selectGame .selecter .message-preview .avatar img{width: 50px; height: 50px; }
+#selectGame .selecter .message-preview .name{ font-size: 16px; font-weight: bold; color: #333}
+#selectGame .selecter .message-preview .message{ font-size: 12px; color: #666; margin-top: 4px; }
+#selectGame .selecter a:hover{text-decoration: none;}
+
+
+#serverList ul.select-group{ padding: 0}
+#serverList .modal-dialog{ padding-top: 68px}
+#serverList .modal-header{ border: none;}
+#serverList .tab-ctrl{ padding: 0 0 10px 0}
+#serverList .col-ct-2{ float: left; width: 148px; overflow: hidden;}
+#serverList .modal-body { padding: 0px 20px}
+#serverList .modal-body .tab-pane p{ margin: 2px 4px; padding: 2px 4px; cursor: pointer; border: 1px #e2edef solid; }
+#serverList .modal-body .tab-pane p.selected{ background-color: #e2eef5}
+
+
+/* Nav Announcements */
+.announcement-heading {font-size: 50px; margin: 0;}
+.announcement-text {margin: 0;}
+.navbar-inverse .navbar-nav .dec{ color: #fff }
+.navbar-nav .menu-load-msg{ margin-top: 18px; text-align: center; width: 200px; color: #999;}
+
+/* Table Headers */
+table.tablesorter thead {cursor: pointer;}
+table.tablesorter thead tr th:hover {background-color: #f5f5f5;}
+
+/* Flot Chart Containers */
+.flot-chart { display: block; height: 400px;}
+.flot-chart-content {width: 100%; height: 100%;}
+
+#wrapper .sgp_wrap td{ padding: 6px; text-align: center; border: none;}
+#wrapper .sgp_wrap td:hover{ background-color:#eee; cursor: pointer;}
+#wrapper .sgp_wrap td p{ margin: 0; font-size: 12px; padding: 2px}
+#wrapper .sgp_wrap td.selected{ background-color: #95CAFF}
+
+.responsive-default {overflow-y: hidden; width: 100%; }
+.responsive-default table{ margin-bottom: 0}
+.responsive-default table th, .responsive-default table td{ white-space: nowrap;}
+
+.form_date input[type="text"]{cursor: pointer;}
+
+#login_wrap{margin-top: 80px }
+#login_wrap .modal{position: relative; right: auto; left: auto; bottom: auto; z-index: 1; display: block; overflow: hidden;}
+
+.pagination > li > em {float: left; line-height: 1.42857; margin-left: -1px; padding: 6px 12px; position: relative; text-decoration: none;}
+
+.panel-primary {border-color: #fff}
+
+  /*side nav*/
+  .side-nav li{ width: 100%;}
+  .side-nav ul{ padding: 0; margin: 0}
+  .side-nav ul.tree{padding-left: 16px}
+  .side-nav label.nav-header{
+      background-color: #000;
+      color: #999;
+      display: block;
+      font-size: 14px;
+      padding: 10px 0 10px 14px;
+      margin: 2px 0 0 0;
+      cursor: pointer;
+  }
+  .side-nav label.nav-header:hover{
+      background-color: #eee;
+      color: #000;
+  }
+  .side-nav label b{
+    color: #999;
+    font-size: 14px;
+    background-color: #999;
+  }
+  .side-nav a{
+      color: #fff;
+      cursor: pointer;
+      font-size: 13px;
+  }
+  .side-nav a:hover,.side-nav a:focus{
+      color: #000;
+  }
+  .side-nav a.active{
+      background-color: #000;
+  /*  border-top: #0080FF 1px solid;
+      border-bottom: #0080FF 1px solid;
+      border-left: #0080FF 1px solid;  */ 
+     border-right: #0080FF 8px solid;
+  }
+  .side-nav li:focus, .side-nav li:hover{
+    background: transparent;
+  }
+
+
+  .navbar-inverse .navbar-nav>li>a:hover,
+  .navbar-inverse .navbar-nav>li>a:focus {
+  background-color: #080808;
+  }
+
+  .navbar-inverse .navbar-nav .dec{ color: #999 }
+
+
+
+/* Edit Below to Customize Widths > 768px */
+@media (min-width:768px) {
+
+  /* Wrappers */
+
+  #wrapper {
+	padding-left: 225px;
+  }
+  #wrapper .navbar-brand{padding:15px 15px 15px 60px; background: 6px top no-repeat ;}
+  #page-wrapper .panel-body{ padding:10px } 
+  #page-wrapper .text-mg10{ padding: 0}
+  #page-wrapper .form_date{ margin:0} 
+  #serverList .modal-dialog-lg { width:960px}
+  #selectGame .selecter{left: 225px; }
+
+  /* Side Nav */
+  .side-nav-wrap {
+    height: 100%;
+    left: 225px;
+    margin-left: -225px;
+    padding-bottom: 50px;
+    position: fixed;
+    top: 50px;
+    width: 225px;
+  }
+
+  .side-nav {
+	/*margin-left: -225px;
+	left: 225px;
+	width: 225px;
+	position: fixed;
+	top: 50px;
+	height: 100%;
+	border-radius: 0;
+	border: none;
+	background-color: #222222;
+	overflow-y: auto;*/
+  background-color: #222222;
+  border: medium none;
+  border-radius: 0;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  width: 225px;
+  }
+
+  /* Bootstrap Default Overrides - Customized Dropdowns for the Side Nav */
+
+  .side-nav ul.dropdown-menu {
+	position: relative;
+	min-width: 225px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+  }
+
+
+
+  /* Nav Messages */
+  .messages-dropdown .dropdown-menu {
+	min-width: 300px;
+  }
+
+  .messages-dropdown .dropdown-menu li a {
+	white-space: normal;
+  }
+  .navbar-inverse .navbar-nav .dec{ color: #333 }
+
+}
+
+

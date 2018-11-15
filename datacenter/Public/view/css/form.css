@@ -1,0 +1,113 @@
+@charset "utf-8";
+/*CSS Document
+	Name: Form.css
+	Author:	Await
+ 	webSite:	http://leotheme.cn/
+ 	Dtae:	2011-10-11 10:21
+*/
+input,textarea,button {
+	border: none; margin: 0; padding: 0; color: #333; vertical-align: middle;
+}
+/* Load form.png */
+input.text,textarea,input.date,input.arrow,
+dl.typeSelectBig input,dl.typeSelectSmall input,
+.btn_desc,.btn_asc,.btn_price_sort{
+	background: url("form.png") no-repeat;
+}
+input.date,input.text,textarea {
+	height: 22px;
+	line-height: 22px;
+	padding: 2px 0 1px 2px;
+	color: #abadb3;
+	border: 1px solid #ABADB3;
+	background-position: 0 -175px;
+}
+input[type=text]:focus,input[type=text].focus,
+input[type=password]:focus,input[type=password].focus,
+textarea:focus,textarea.focus {
+	color: #333;
+	border:1px solid #FFAB00;
+}
+
+input.error,
+textarea.error {
+	color: #f00;
+	border:1px solid #ff0000;
+}
+input.date{
+	background-position: right -30px;
+}
+input.arrow {
+	background-position: right top;
+}
+input.small {
+	height: 15px;
+	line-height: 15px;
+}
+input.small.date {
+	background-position: right -34px;
+}
+input.radio,
+input.checkbox{
+	vertical-align: middle;
+	margin-bottom:1px;
+	margin-top:-2px;
+}
+.checkbox_item{
+	margin: 6px 4px;
+	display: block;
+	float: left;
+}
+
+input.button {
+	color: #fff;
+	background-color: #DB7300;
+}
+textarea {
+	min-height: 100px;
+	height: 100px;
+}
+
+/*
+	Sorting
+ */
+.btn_desc,.btn_asc,.btn_price_sort {
+	display: inline-block;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	padding-right:18px;
+	padding-left:5px;
+	color:#333;
+	border: 1px solid #ABADB3;
+	font-weight:  normal !important;
+	cursor: pointer;
+}
+
+.btn_desc {
+	background-position: right -80px;
+}
+.btn_desc:hover {
+	background-position: right -110px;
+}
+.btn_desc.current {
+	background-position: right -140px;
+}
+.btn_asc {
+	background-position: right -175px;
+}
+.btn_asc:hover {
+	background-position: right -205px;
+}
+.btn_asc.current {
+	background-position: right -235px;
+}
+.btn_price_sort {
+	background-position: right -270px;
+}
+.btn_price_sort:hover {
+	background-position: right -300px;
+}
+.btn_price_sort.current {
+	background-position: right -330px;
+}

@@ -1,0 +1,96 @@
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+#header .header-wrap{width: 1264px; margin: 0 auto; padding: 10px 0}
+#header .title{margin: 4px 0; padding: 0; font-size: 24px; font-weight: bold; color: #333}
+#header .subtitle{margin: 4px 0;padding: 0 8px; font-size: 18px; font-weight: bold; color: #666}
+#main .content-wrap{ width: 1264px; margin: 0 auto; padding: 10px 0}
+#main .content-wrap .row{ margin-bottom: 12px}
+#main .param{ font-size: 12px; color: #999; padding: 0 12px; margin: 0; line-height: 16px} 
+#main .frame-wrap{border:solid 1px #ccc}
+#main p.ttl{font-weight: bold;} 
+#main span.gray{color: #999999; font-size: 12px; margin-left: 6px;}
+
+
+/*reportList*/
+#reportList{ width: 100%; border-collapse:collapse}
+#reportList th, #reportList td{ border:1px solid #999; text-align: center; padding: 2px 4px} 
+#reportList tr.third{ background-color: #ccc}
+#reportList tr.sixth{ background-color: #ddd}
+#reportList td.rglink a{text-decoration: none; color:#0080FF}
+
+
+/*contorler*/
+#contorler{background-color: #CCC; padding: 2px 8px; border:1px solid #999;}
+#contorler p{margin: 12px 0; padding: 0 8px;}
+#contorler span.tipp{font-size: 12px; color: #808080; padding: 0 12px}
+#contorler span.gray{font-size: 13px; color: #808080; padding: 0 12px}
+
+
+/*pagecontroler*/
+#pagecontroler{text-align: right;}
+#pagecontroler li.pageitm{ border: 1px solid #ccc; display: inline; margin: 0 4px; padding: 2px 0;}
+#pagecontroler li.pageetc{ display: inline; padding: 2px 0;}
+#pagecontroler li.pageitm a, #pagecontroler li.pageitm span{text-decoration: none; font-size: 14px;  padding: 4px 8px; line-height: 20px; }
+#pagecontroler li.disabled{ background-color: #eee}
+#pagecontroler li.pageitm a{color: #333}
+#pagecontroler li.disabled span{color: #999}
+
+
+/*gamesList*/
+#gamesList{ width: 100%; border-collapse:collapse}
+#gamesList th, #gamesList td{ border:1px solid #999; text-align: center; padding: 2px 4px; word-wrap:break-word; word-break:break-all;} 
+#gamesList tr.third{ background-color: #ccc}
+#gamesList tr.sixth{ background-color: #ddd}
+#gamesList td.rglink a{text-decoration: none; color:#0080FF}
+#gamesList td.taleft{text-align: left;}
+
+
+/*GamesList*/
+#GamesList{padding: 0 12px 20px 12px}
+#GamesList ul{margin: 0; padding: 0}
+#GamesList ul li{list-style: none;  width: 280px; float: left; padding-top: 16px}
+
+
+/*rpTbl*/
+#rpTbl{ width: 800px; border-collapse:collapse}
+#rpTbl th, #rpTbl td{ border:1px solid #999; text-align: center; padding: 2px 4px; word-wrap:break-word; word-break:break-all;}
+
+
+/*layoutPreview*/
+/*.settingNote{color:#c0c0c0;font-size:12px}*/
+#layoutPreview{margin:0 auto;padding:10px 10px;width:1260px;border:1px #c0c0c0 solid}
+#layoutPreview .colm{position:relative;float:left;margin:5px;height:140px;border:2px #66b3ff dashed}
+#layoutPreview .col-sh{height: 50px}
+#layoutPreview .col4-1{width:300px}
+#layoutPreview .col4-2{width:614px}
+#layoutPreview .col4-3{width:928px}
+#layoutPreview .col4-4{width:1242px}
+#layoutPreview .colWrap{padding:8px 20px}
+#layoutPreview .colWrap-l{padding:0 20px}
+#layoutPreview .report-remove{margin-left:10px}
+#layoutPreview .ui-sortable-placeholder{visibility:visible!important;border-color:#ff8040!important}
+#layoutPreview .colm-fixed{border-color: #ccc}
+
+
+/*reportProp*/
+#reportProp  h3 {margin-top: 0}
+#reportProp li{ margin-top: 5px}
+#reportProp .c_wrap{ border:1px solid #ccc; padding:0 10px; margin-bottom: 14px;}
+#reportProp .forminline{ display: inline;}
+#reportProp textarea{ width: 60%; height: 100px}
+
+
+/*gmReportsSaveForm*/
+#gmReportsSaveForm li.original {color: #0000c0;}
+
+
+
+
+
+
+
+
+
+
+

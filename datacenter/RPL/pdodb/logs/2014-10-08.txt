@@ -1,0 +1,27 @@
+Time : 17:57:29
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select * ''"") AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER' at line 1
+Raw SQL : SELECT * FROM (SELECT * FROM game_server WHERE gamecode = ""select * ''"") AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER BY platform, worldid
+
+Time : 17:57:01
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'baidu" OR platform = "pk" ORDER BY platform, worldid' at line 1
+Raw SQL : SELECT * FROM (SELECT * FROM game_server WHERE gamecode = ""*") AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER BY platform, worldid
+
+Time : 17:54:17
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tlzz") AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER BY plat' at line 1
+Raw SQL : SELECT * FROM (SELECT * FROM game_server WHERE gamecode = ""tlzz") AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER BY platform, worldid
+
+Time : 17:54:09
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'baidu" OR platform = "pk" ORDER BY platform, worldid' at line 1
+Raw SQL : SELECT * FROM (SELECT * FROM game_server WHERE gamecode = "tlzz"") AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER BY platform, worldid
+
+Time : 17:38:33
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'baidu" OR platform = "pk" ORDER BY platform, worldid' at line 1
+Raw SQL : SELECT * FROM (SELECT * FROM game_server WHERE gamecode = """) AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER BY platform, worldid
+
+Time : 17:33:30
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'baidu" OR platform = "pk" ORDER BY platform, worldid' at line 1
+Raw SQL : SELECT * FROM (SELECT * FROM game_server WHERE gamecode = "tlzz"") AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER BY platform, worldid
+
+Time : 17:31:31
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tlzz"") AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER BY pla' at line 1
+Raw SQL : SELECT * FROM (SELECT * FROM game_server WHERE gamecode = ""tlzz"") AS gameplatform WHERE platform = "baidu" OR platform = "pk" ORDER BY platform, worldid

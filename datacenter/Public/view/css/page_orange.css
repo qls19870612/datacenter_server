@@ -1,0 +1,40 @@
+div.page {
+    text-align: center;
+    color: #F90;
+}
+div.page a {
+	font-size:14px;
+    border: 1px solid #DDDDDD;
+    color: #F90;
+    margin: 2px;
+    padding: 1px 5px 1px 5px;
+    text-decoration: none;
+}
+div.page a.link {
+    border: 0px;
+}
+div.page a:hover {
+    background-color: #FFF9DD;
+    border: 1px solid #F90;
+    color: #FF6633;
+}
+div.page a:active {
+    background-color: #FFF9DD;
+    border: 1px solid #F90;
+    color: #FF6633;
+}
+div.page span {
+	font-size:14px;
+    margin: 2px;
+	padding: 1px 5px 1px 5px;
+}
+div.page span.current {
+    background-color: #FFF9DD;
+    border: 1px solid #F90;
+    color: #FF6633;
+    font-weight: bold;
+}
+div.page span.disabled {
+    border: 1px solid #F3F3F3;
+    color: #CCCCCC;
+}

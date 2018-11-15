@@ -1,0 +1,56 @@
+@charset "utf-8";
+body,input,table,select,textarea,h1,h2,h3,h4{
+	color:#555555;
+	font-family: "宋体";
+}
+body,input,table,select,textarea,h1{
+	font-size:12px;
+	font-weight:normal;
+}
+.clear{font: 0px/0px sans-serif;clear: both;display: block;overflow:hidden;height:0px;}
+li{list-style-type:none;}
+
+body{margin:0;padding:0;text-align: center;height:100%;overflow-x: hidden;word-break : break-all;background-color:#fff;}
+
+.err{color:#F00;font-weight:bold;font-size:14px;}
+div,ul {margin:0;padding:0;}
+/*后台管理主框*/
+.frame_header{
+font-size:16px;color:#FFF;font-weight:bold;padding-left:15px!important;height:40px;background:url(../../images/admin/header_bg.jpg); }
+/*后台管理左右框*/
+.frame_left{width:200px;border-left:3px solid #EEE;overflow:hidden;vertical-align:top;}
+
+.frame_right{vertical-align:top;border-right:3px solid #EEE;padding-top:5px;}
+
+.frame_middle{width:10px;overflow:hidden;background:url(../../images/admin/center_bg.jpg)}
+
+.a_left_title{cursor:pointer;text-align:center;margin:4px 0 0 0;padding-top:5px;width:100%!important;height:25px!important;background:url(../../images/admin/left_title_bg.jpg) repeat-x left top;font-weight:bold;letter-spacing: 10px;font-size:14px;}
+
+li.submenu{margin:0px;padding-left:20px;background:url(../../images/admin/li_bg.jpg) no-repeat 5px 3px;line-height:20px;font-size:14px;margin-bottom:2px;}
+
+li.submenu a{color:blue;text-decoration: none;width:100%;}
+
+li.submenu a:hover{color:red;text-decoration: underline;}
+
+.frame_footer{font-size:14px;color:#FFF;padding-left:15px!important;height:30px;background-image:url(../../images/admin/footer_bg.jpg);text-align:center;vertical-align:bottom;}
+
+
+div.main table{line-height:25px;border:1px solid #000;border-collapse: collapse;}
+
+div.main table td{border:1px solid #000;}
+div.main table tr{border:1px solid #000;}
+div.main table th{border:1px solid #000;background:#EEE;font-weight:bold;}
+
+div.l{text-align:left;font-size:14px;font-weight:bold;float:left;width:40%;}
+div.r{text-align:right;font-size:14px;font-weight:bold;width:50%;float:right;}
+
+div.subtitle{border-bottom:2px double #000;line-height:25px;height:26px;}
+
+
+div.ajaxdiv{border:1px solid #000;width:100%;height:auto;}
+div.ajaximg{width:450px;height:150px;border:1px solid #CCC;margin:2px;float:left;text-align:left;}
+
+.hldlbox {background:url(../../images/admin/htbg.jpg) no-repeat 0 0; width:662px; height:662px; left:50%; top:50%; position:absolute; margin:-331px 0 0 -331px;}
+.hlteku {background:#cbddee; border:#062e6b 1px solid;}
+.hlsuba {background:url(../../images/admin/htdl.jpg) no-repeat; border:0; width:42px; height:20px;}
+.hlleft {color:#fff;}
