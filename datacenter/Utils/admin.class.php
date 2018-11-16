@@ -9,8 +9,7 @@ class admin{
 			$this->db=$dbconn;
 		}else{
 			global $db;
-			$this->db=TSQL::initDB('Mysqli');
-			echo "admin".$this->db."79879879";
+			$this->db=TSQL::initDB('Mysql');
 		}
 	}
 
@@ -69,7 +68,6 @@ class admin{
 			return false;
 		}
 		$sql="select * from {$this->tbl} where name='".safestr($authinfo[0])."' ";
-		print_r("$this->db".$this->db);
 		$row=$this->db->fetchRow($sql);
 		if(!$row){
 			return false;
@@ -152,13 +150,12 @@ class admin{
 			$logpwd=addslashes($arr['logpwd']);
 		}
 		$sql="select a.* from {$this->tbl} a  where name='".$arr['logname']."' and password='".$logpwd."'";		//SQL
-        echo ($this->db==null ?"<br>1111111":"<br>3333333333");
+
 		$row=$this->db->fetchRow($sql);
 
 		if(!$row){
 			return -2;
 		}else{
-			
 			if($row['stop']){
 				return -3;
 			}else{
@@ -178,7 +175,6 @@ class admin{
 				if(!$row['AllowPlatform']){
 					$row['AllowPlatform']=array();
 				}
-				
 				if($row['level']!=1){
 					if($row['group_ids']){
 						$sql="select power from {$this->tbl_group} where id in (".$row['group_ids'].")";

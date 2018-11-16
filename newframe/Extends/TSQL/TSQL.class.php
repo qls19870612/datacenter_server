@@ -98,12 +98,11 @@ class TSQL
 	{
 		if(is_array($driverConfig) && $driverConfig )
 		{
-		    echo get_class()."_".$driverConfig['driver'];
+
 			if(empty($driverConfig['driver']) || !class_exists(get_class()."_".$driverConfig['driver']))
 			{
 				return FALSE;
 			}
-			
 			$setName = $setName ? $setName : $driverConfig['driver'];
 			$ClassName=get_class()."_".$driverConfig['driver'];
 			self::$Drivers[$setName] = new $ClassName($driverConfig);
@@ -130,12 +129,6 @@ class TSQL
 			if(isset(self::$Drivers[$Name]) && self::$Drivers[$Name])
 			{
 				!self::$Drivers[$Name]->isConnected() &&  self::$Drivers[$Name]->connect();
-                foreach (self::$Drivers as $key=>$value) {
-                    echo '++++++'.$key.'='.$value.'<br>';
-				}
-				$varName = self::$Drivers[$Name]->isConnected();
-                echo $varName.'=<br>';
-				echo self::$Drivers['Mysql'].'<*********>'.$Name.'_';
 				return self::$Drivers[$Name];
 			}
 		}
@@ -543,7 +536,7 @@ class TSQL
 	  */
 	public function Err($Type,$Msg)
 	{
-		$this->Debug && $this->ERROR[$Type][]=$Msg;
+		$this->Debug && $this->{ERROR[$Type]}[]=$Msg;
 	}
 
 

@@ -81,4 +81,4 @@
 		<?php echo $er_cont; ?>
 	</div>
 </body>
-</head>
+</html>

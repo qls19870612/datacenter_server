@@ -447,7 +447,7 @@ class NoSQL
 	  */
 	public function Err($Type,$Msg)
 	{
-		$this->Debug && $this->ERROR[$Type][]=$Msg;
+		$this->Debug && $this->{ERROR[$Type]}[]=$Msg;
 	}
 
 

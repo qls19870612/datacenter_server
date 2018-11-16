@@ -134,7 +134,7 @@ class TSQL_mysqli extends TSQL
 			{
 				$this->DB_Current = $DBName;
 			}
-			else if(mysqli_errno())
+			else if(mysqli_errno($this->conn))
 			{
 				$this->Err('setDB','[switch DB '.$DBName.']:'.mysqli_error($this->conn));
 			}
@@ -156,7 +156,7 @@ class TSQL_mysqli extends TSQL
     */
 	public function setCharset($Charset = NULL)
 	{
-		$Charset && $this->conn && (@mysqli_set_charset($Charset) or $this->Err('setCharset','[set Charset ='.$Charset.']:'.mysqli_error($this->conn)));
+		$Charset && $this->conn && (@mysqli_set_charset($this->conn,$Charset) or $this->Err('setCharset','[set Charset ='.$Charset.']:'.mysqli_error($this->conn)));
 	}
 
 	/**
@@ -315,6 +315,7 @@ class TSQL_mysqli extends TSQL
     */
 	public function Query($Type,$SQL_Adpat = NULL,$onlyStatus=FALSE)
 	{
+	    
 		$Result=array('status'=>FALSE,'SQL'=>'','affect_rows'=>0,'rows_nums'=>0);
 
 		if(!$this->conn)
@@ -322,16 +323,19 @@ class TSQL_mysqli extends TSQL
 			$this->Err('Query','Database Not Connect');
 			return $onlyStatus ? $Result['status'] : $Result;
 		}
-		
-		$SQL=$this->CreateSQL($SQL_Adpat,$Type);
-		$Result['SQL']=$SQL;
+        
+        $SQL=$this->CreateSQL($SQL_Adpat,$Type);
+        $Result['SQL']=$SQL;
 
-		if( !empty($SQL) )
-		{
-			$this->Debug && $this->SQLArray[]=$SQL;
+        
+        if( !empty($SQL) )
+        {
+            
+            $this->Debug && $this->SQLArray[]=$SQL;
 			
-			if($this->Result = @mysqli_query($SQL,$this->conn))
+			if($this->Result = @mysqli_query($this->conn,$SQL))
 			{
+                
 				//执行成功
 				switch(strtoupper($Type))
 				{
@@ -370,9 +374,9 @@ class TSQL_mysqli extends TSQL
 			}
 			else
 			{
-				if(mysqli_errno())
+				if(mysqli_errno($this->conn))
 				{
-					$this->Err('Query',"[SQL] : ".$SQL.PHP_EOL."[ERROR] : ".mysqli_error());
+					$this->Err('Query',"[SQL] : ".$SQL.PHP_EOL."[ERROR] : ".mysqli_error($this->conn));
 				}
 			}
 		}
@@ -380,7 +384,6 @@ class TSQL_mysqli extends TSQL
 		{
 			return $this->fetch();
 		}
-
 
 		return $onlyStatus ? $Result['status'] : $Result;
 	}
@@ -396,11 +399,9 @@ class TSQL_mysqli extends TSQL
     */
 	public function fetch($MoveTo = -1)
 	{
-
-		if ( $this->Result && is_resource($this->Result))
+		if ( $this->Result &&  $this->Result->num_rows)
 		{
 			$MoveTo>=0 && $MoveTo<$this->getResultNum() && mysqli_data_seek($this->Result,$MoveTo);
-
 			if ( $row = @mysqli_fetch_array( $this->Result, MYSQLI_ASSOC ) )
 			{
 				return $row;

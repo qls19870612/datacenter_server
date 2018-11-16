@@ -99,23 +99,25 @@ function __GAME_PLATFORM ($level, $selectedGame, $AllowPlatform){
 			$_PLATFORMLIST = array();
 		}
 	}
-	if(count($_PLATFORMLIST) > 0){
-		foreach ($_PLATFORMLIST as $platform) {
-			$pf_code = $platform['platform'];
-			$pf_wid = $platform['worldid'];
-			$pf_sn = $platform['servername'];
-			if(!isset($list_arr[$pf_code])){
-				$list_arr[$pf_code] = '';
-			}
-			$list_arr[$pf_code] .= '<li class="col-ct-2"><p class="sitm" name="sid_'.$pf_code.'" data-val="'.$pf_wid.'">'.$pf_sn.'</p></li>';
-		}
-		foreach ($list_arr as $pf_code => $pf_itm) {
-			$markact = $tabcount > 0 ? '' : 'active';
-			$tab_dom .= '<li class="'.$markact.'"><a data-toggle="tab" href="#t_'.$pf_code.'" class="tab-title">'.$pf_code.'(<span>0</span>)</a></li>';
-			$list_dom .= '<div data-plt="'.$pf_code.'" id="t_'.$pf_code.'" class="tab-pane '.$markact.'"><ul class="select-group clearfix">'.$pf_itm.'</ul></div>';
-			$tabcount ++;
-		}
-	}
+    if (!empty($_PLATFORMLIST)) {
+        if(count($_PLATFORMLIST) > 0){
+            foreach ($_PLATFORMLIST as $platform) {
+                $pf_code = $platform['platform'];
+                $pf_wid = $platform['worldid'];
+                $pf_sn = $platform['servername'];
+                if(!isset($list_arr[$pf_code])){
+                    $list_arr[$pf_code] = '';
+                }
+                $list_arr[$pf_code] .= '<li class="col-ct-2"><p class="sitm" name="sid_'.$pf_code.'" data-val="'.$pf_wid.'">'.$pf_sn.'</p></li>';
+            }
+            foreach ($list_arr as $pf_code => $pf_itm) {
+                $markact = $tabcount > 0 ? '' : 'active';
+                $tab_dom .= '<li class="'.$markact.'"><a data-toggle="tab" href="#t_'.$pf_code.'" class="tab-title">'.$pf_code.'(<span>0</span>)</a></li>';
+                $list_dom .= '<div data-plt="'.$pf_code.'" id="t_'.$pf_code.'" class="tab-pane '.$markact.'"><ul class="select-group clearfix">'.$pf_itm.'</ul></div>';
+                $tabcount ++;
+            }
+        }
+    }
 	$dom .= '<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="serverList" class="modal fade in" style="display: none;"><div class="modal-dialog modal-dialog-lg"><div class="modal-content"><div class="modal-header"><button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button><ul id="selectTab" class="nav nav-tabs">'.$tab_dom.'</ul></div><div class="modal-body"><div class="tab-ctrl clearfix"><div class="btn-group"><button data-btntype="selectAll" class="btn btn-default btn-sm selCtrl" type="button">全选</button><button data-btntype="antiElection" class="btn btn-default btn-sm selCtrl" type="button">反选</button></div><button data-dismiss="modal" class="btn btn-primary btn-sm pull-right selCtrl" type="button" data-btntype="sumbit">确定</button></div><div id="serverGroup" class="tab-content">'.$list_dom.'</div></div><div class="modal-footer"><div class="btn-group pull-left"><button data-btntype="selectAll" class="btn btn-default btn-sm selCtrl" type="button">全选</button><button data-btntype="antiElection" class="btn btn-default btn-sm selCtrl" type="button">反选</button></div><button data-dismiss="modal" class="btn btn-primary btn-sm selCtrl" type="button" data-btntype="sumbit">确定</button></div></div></div></div>';
 
 	return $dom;

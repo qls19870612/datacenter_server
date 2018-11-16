@@ -103,11 +103,9 @@ class TSQL_mysqlpdo
 
     public function fetchRow($sql = '')
     {
-		echo "=======fetchRow".$sql;
         $this->sql = $sql;
         try {
             $this->query($sql);
-			echo "=======fetchRow11111111".$sql;
             return $this->pdostmt->fetch(constant('PDO::FETCH_ASSOC'));
         } catch (PDOException $e) {
             $this->errorLog("pdo不可用：" . $e->getMessage());
