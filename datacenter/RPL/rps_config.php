@@ -13,7 +13,7 @@
 			),
 			array(
 				'title' => '崩坏3',
-				'icon' => 'images/game_logo/large/bhs.jpg',
+				'icon' => 'images/game_logo/large/diablo.jpg',
 				'link' => '#'
 			)
 		)
@@ -28,7 +28,7 @@
 			),
 			array(
 				'title' => '崩坏3(日本)',
-				'icon' => 'images/game_logo/large/bhs.jpg',
+				'icon' => 'images/game_logo/large/diablo.jpg',
 				'link' => '#'
 			)
 		)

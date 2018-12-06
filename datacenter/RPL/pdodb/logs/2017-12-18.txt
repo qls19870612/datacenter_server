@@ -1,2 +1,0 @@
-Time : 13:29:13
-SQLSTATE[HY000] [2002] Connection refused

@@ -42,12 +42,12 @@ $(function() {
 		var _plt = $(this), plt = _plt.data('plt');
 		APP_STATUS.cur.game_server.push(plt);
 		APP_STATUS.cur.sel_server['sid['+plt+']'] = '*';
-	})
+	});
 	
 	APP_STATUS.cur.all_server = APP_STATUS.cur.sel_server;
 
 	if ($.cookie) {
-		var _appNotice = $.cookie('APP_NOTICE') || ''
+		var _appNotice = $.cookie('APP_NOTICE') || '';
 		if (_appNotice) {
 			var _appNoticeArr = _appNotice.split('|');
 			var type = _appNoticeArr[0];
@@ -56,7 +56,7 @@ $(function() {
 			$.cookie('APP_NOTICE', '');
 		}
 	}
-})
+});
 /*****Initialization end*****/
 
 

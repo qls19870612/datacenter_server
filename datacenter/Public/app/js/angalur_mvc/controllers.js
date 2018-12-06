@@ -19,7 +19,7 @@ navigationCtrl.controller('navigationCtrl', ['$scope', '$cookies',
 		};
 		$scope.gameList = [{
 			title: '崩坏3',
-			pageId: 'bhs'
+			pageId: 'diablo'
 		}, {
 			title: '游戏1',
 			pageId: 'asta'

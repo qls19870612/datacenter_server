@@ -18,12 +18,12 @@ $GLOBALS['DB'] = array(
         'DBName' => 'datacenter',
         'Charset' => 'utf8'
     ),
-	'bhs' => array(
+	'diablo' => array(
         'driver' => 'mysqli',
         'Host' => '127.0.0.1',
         'Port' => 3306,
         'User' => 'root',
         'Password' => '123456',
-        'DBName' => 'dbbhsyyresult',
+        'DBName' => 'dbdiabloyyresult',
         'Charset'=>'utf8'
 ));
