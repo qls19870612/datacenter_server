@@ -18,7 +18,7 @@ navigationCtrl.controller('navigationCtrl', ['$scope', '$cookies',
 			title: '运营分析系统2'
 		};
 		$scope.gameList = [{
-			title: '崩坏3',
+			title: '暗黑3',
 			pageId: 'diablo'
 		}, {
 			title: '游戏1',

@@ -98,7 +98,7 @@ function pagestr($count,$page,$pagecount,$paramkey=array(),$otherpar=''){
 	$allpage=ceil($count/$pagecount)?ceil($count/$pagecount):1;
 	$page_i=9;
 	$page_str="<div class='page'>".$count."条记录,共".$page."/".$allpage."页";
-	$params='';
+	$params=array();
 	if($paramkey){
 		foreach($paramkey as $v){
 			$params[$v]=_request($v)?_request($v):'';
@@ -165,7 +165,7 @@ function pagestr2($count,$page,$pagecount,$paramkey=array(),$otherpar=''){
 	$allpage=ceil($count/$pagecount)?ceil($count/$pagecount):1;
 	$page_i=9;
 	$page_str="<div class=\"pagenavi\"><ul><li><a href=\"#\">".$page."/".$allpage."</a></li>";
-	$params='';
+	$params=array();
 	if($paramkey){
 		foreach($paramkey as $v){
 			$params[$v]=_request($v)?_request($v):'';
