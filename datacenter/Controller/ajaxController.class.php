@@ -734,6 +734,21 @@ class ajaxController extends BasicController
 
         if ($sql_arr) {
             if ($sql_pre) {
+                foreach ($p as $k => $v) {
+                    if (stripos($k, "ouput_") !== false) { //如果是output_开头的变量不做处理
+                        continue;
+                    }
+                    if (in_array($k, array('sid'))) {
+                        $sql_pre = str_replace('{sid}', implode(',', $worldid), $sql_pre);
+                        continue;
+                    }
+                    if (is_array($v)) {
+                        $sql_pre = str_replace('{' . $k . '}', implode(',', $v), $sql_pre);
+                    } else {
+                        $sql_pre = str_replace('{' . $k . '}', $v, $sql_pre);
+                    }
+                }
+
                 $sql_tmp = str_replace('[SQL]', implode(" union all ", $sql_arr), $sql_pre);
                 $sql_tmp = str_replace('{game}', $game, $sql_tmp);
                 $rows = $tsql_db->fetchAll($sql_tmp);

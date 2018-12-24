@@ -536,7 +536,18 @@ class TSQL
 	  */
 	public function Err($Type,$Msg)
 	{
-		$this->Debug && $this->{ERROR[$Type]}[]=$Msg;
+//        $this->Debug && $this->{ERROR[$Type]}[]=$Msg;
+        if($this->Debug==false)return;
+        $arr=$this->ERROR["$Type"];
+        if($arr==null)
+        {
+            $arr = array();
+
+        }
+
+        $arr[count($arr)]=$Msg;
+        $this->ERROR[$Type]=$arr;
+        echo $Msg;
 	}
 
 

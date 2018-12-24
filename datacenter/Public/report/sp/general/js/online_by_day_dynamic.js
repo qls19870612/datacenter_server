@@ -1,13 +1,13 @@
 //设置highchart属性
 var _realTime = moment().format('YYYY-MM-DD hh:mm:ss'), __setIntervaler, __setIntervalerUpdate;
-var _loadDom = '<div id="iframeLoading" style="padding:24px 0 0 0;" class="row" ><div style="background: url(../../resource/images/GUI/loading2.gif) center top no-repeat; height: 32px;" class="loading"></div><div><p style="text-align:center;">正在加载...</p></div></div>';
+var _loadDom = '<div id="iframeLoading" style="padding:24px 0 0 0;" class="row" ><div style="background: url(../../../resource/images/GUI/loading2.gif) center top no-repeat; height: 32px;" class="loading"></div><div><p style="text-align:center;">正在加载...</p></div></div>';
 
 
 var _stockCharts = [{
 	'title':'实时在线数据',
 	'subtitle':'',
 	'case':'#OnlineInfo',
-	'sql_id':112,
+	'sql_id':758,
 	'sql_key':'online_by_day_dynamic_g',
 	'time_axis':'stattime',
 	'series' : [{
@@ -24,7 +24,7 @@ var _stockCharts = [{
 	'title':'实时充值数据',
 	'subtitle':'',
 	'case':'#RechargeInfo',
-	'sql_id':114,
+	'sql_id':759,
 	'sql_key':'online_by_day_dynamic_g',
 	'time_axis':'stattime',
 	'series' : [{
@@ -37,7 +37,7 @@ var _stockCharts = [{
 	'title':'实时创角数据',
 	'subtitle':'',
 	'case':'#CreateroleInfo',
-	'sql_id':121,
+	'sql_id':760,
 	'sql_key':'online_by_day_dynamic_g',
 	'time_axis':'stattime',
 	'series' : [{

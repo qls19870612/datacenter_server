@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.19, for linux-glibc2.12 (x86_64)
 --
--- Host: localhost    Database: dbdiabloyyresult
+-- Host: localhost    Database: dbdiablomuzhiresult
 -- ------------------------------------------------------
 -- Server version	5.7.19
 
