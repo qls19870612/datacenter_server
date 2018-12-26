@@ -4,6 +4,7 @@ cd /usr/local/server/php_remote_web/
 lcd D:/workspace/DataCenter/server
 put -r ./datacenter
 put -r ./newframe
+put -r ./dbdata
 exit
 close
 bye

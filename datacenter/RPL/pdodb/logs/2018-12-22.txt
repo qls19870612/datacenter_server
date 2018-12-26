@@ -1,0 +1,7 @@
+Time : 04:12:40
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'online_by_day_dynamic_g' for key 'rp'
+Raw SQL : INSERT INTO report_layout(rp_cid, rp_title, rp_url) VALUES(:rp_cid, :rp_title, :rp_url)
+
+Time : 04:09:22
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'online_by_day_dynamic_g' for key 'rp'
+Raw SQL : INSERT INTO report_layout(rp_cid, rp_title, rp_url) VALUES(:rp_cid, :rp_title, :rp_url)
