@@ -1,7 +1,7 @@
 ;<?php return; ?>
 [SQL]
-host = '127.0.0.1'
+host = '10.66.203.188'
 user = 'root'
 port = 3306
-password = '123456'
+password = 'ljam5p3i9qy'
 dbname = 'datacenter'

@@ -44,24 +44,20 @@ CREATE TABLE `account_info` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `createrole`
+-- Table structure for table `create_count`
 --
 
-DROP TABLE IF EXISTS `createrole`;
+DROP TABLE IF EXISTS `create_count`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `createrole` (
-  `iEventId` varchar(255) NOT NULL,
-  `iWorldId` int(11) unsigned DEFAULT NULL,
-  `iUin` varchar(255) DEFAULT NULL,
-  `dtEventTime` varchar(255) DEFAULT NULL,
-  `vClientIp` varchar(255) DEFAULT NULL,
-  `iRoleId` bigint(20) unsigned DEFAULT NULL,
-  `vRoleName` varchar(255) DEFAULT NULL,
-  `iJobId` int(10) unsigned DEFAULT NULL,
-  `dt` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`iEventId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `create_count` (
+  `playerCount` int(11) DEFAULT '0',
+  `dtStatDate` datetime DEFAULT NULL,
+  `iWorldId` int(11) DEFAULT NULL,
+  `accountCount` int(11) DEFAULT '0',
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2401 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -141,74 +137,20 @@ CREATE TABLE `monthly_basic` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `recharge`
+-- Table structure for table `online_count`
 --
 
-DROP TABLE IF EXISTS `recharge`;
+DROP TABLE IF EXISTS `online_count`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `recharge` (
-  `iEventId` varchar(255) DEFAULT NULL,
-  `dtEventTime` varchar(255) DEFAULT NULL,
-  `iWorldId` int(11) unsigned DEFAULT NULL,
-  `iUin` varchar(255) DEFAULT NULL,
-  `iRoleId` bigint(20) unsigned DEFAULT NULL,
-  `vRoleName` varchar(255) DEFAULT NULL,
-  `iRoleLevel` int(10) unsigned DEFAULT NULL,
-  `vSN` varchar(255) NOT NULL COMMENT '流水号',
-  `iPayDelta` bigint(20) unsigned DEFAULT NULL COMMENT '充值金额',
-  `iNewCash` bigint(20) unsigned DEFAULT NULL,
-  `dt` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`vSN`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `rolelogin`
---
-
-DROP TABLE IF EXISTS `rolelogin`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `rolelogin` (
-  `iEventId` varchar(255) DEFAULT NULL,
-  `iWorldId` int(11) unsigned DEFAULT NULL,
-  `iUin` varchar(255) DEFAULT NULL,
-  `dtEventTime` varchar(255) DEFAULT NULL,
-  `vClientIp` varchar(255) DEFAULT NULL,
-  `iRoleId` bigint(20) unsigned DEFAULT NULL,
-  `vRoleName` varchar(255) DEFAULT NULL,
-  `iJobId` int(10) unsigned DEFAULT NULL,
-  `iRoleLevel` int(11) unsigned DEFAULT NULL,
-  `iRoleExp` bigint(20) unsigned DEFAULT NULL,
-  `dt` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `shop`
---
-
-DROP TABLE IF EXISTS `shop`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `shop` (
-  `iEventId` varchar(255) NOT NULL,
-  `iWorldId` int(11) NOT NULL,
-  `dtEventTime` varchar(255) NOT NULL,
-  `vClientIp` varchar(255) DEFAULT NULL,
-  `iUin` varchar(255) DEFAULT NULL,
-  `iRoleId` bigint(20) unsigned DEFAULT NULL,
-  `vRoleName` varchar(255) DEFAULT NULL,
-  `iJobId` int(10) unsigned DEFAULT NULL,
-  `iCost` bigint(20) unsigned DEFAULT NULL,
-  `iShopType` int(10) unsigned DEFAULT NULL,
-  `iGoodsType` int(11) DEFAULT NULL,
-  `iGoodsId` int(10) unsigned DEFAULT NULL,
-  `iGoodsNum` int(10) unsigned DEFAULT NULL,
-  `dt` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`iEventId`,`iWorldId`,`dtEventTime`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `online_count` (
+  `iWorldId` int(10) DEFAULT NULL COMMENT '服ID\n',
+  `player_count` int(10) DEFAULT NULL COMMENT '在线角色数\n',
+  `account_count` int(10) DEFAULT NULL COMMENT '在线账号数',
+  `dtStatDate` datetime DEFAULT NULL COMMENT '记录日期',
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2400 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -231,6 +173,57 @@ CREATE TABLE `shop_summary` (
   PRIMARY KEY (`dtStatDate`,`WorldId`,`ShopType`,`GoodsType`,`GoodsId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='消费统计';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbgoodsflowconsumestat`
+--
+
+DROP TABLE IF EXISTS `tbgoodsflowconsumestat`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbgoodsflowconsumestat` (
+  `iWorldId` varchar(60) DEFAULT NULL,
+  `vOperate` varchar(60) DEFAULT NULL,
+  `iGoodsId` int(11) DEFAULT NULL,
+  `dtStatDate` datetime DEFAULT NULL,
+  `iCount` int(11) DEFAULT NULL,
+  `iUserNum` int(11) DEFAULT NULL,
+  `iNum` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbgoodsflowproducestat`
+--
+
+DROP TABLE IF EXISTS `tbgoodsflowproducestat`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbgoodsflowproducestat` (
+  `iWorldId` varchar(60) DEFAULT NULL,
+  `vOperate` varchar(60) DEFAULT NULL,
+  `iGoodsId` int(11) DEFAULT NULL,
+  `iCount` int(11) DEFAULT NULL,
+  `iUserNum` int(11) DEFAULT NULL,
+  `iNum` int(11) DEFAULT NULL,
+  `dtStatDate` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbrealrecharge`
+--
+
+DROP TABLE IF EXISTS `tbrealrecharge`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbrealrecharge` (
+  `totalRecharge` int(11) NOT NULL,
+  `iWorldId` int(11) NOT NULL,
+  `dtStatDate` datetime NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -241,4 +234,4 @@ CREATE TABLE `shop_summary` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-14 11:03:34
+-- Dump completed on 2019-01-02  9:57:06

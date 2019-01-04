@@ -1,10 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `dbdiabloconf` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `dbdiabloconf`;
--- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.19, for linux-glibc2.12 (x86_64)
 --
--- Host: 127.0.0.1    Database: dbdiabloconf
+-- Host: localhost    Database: dbdiabloconf
 -- ------------------------------------------------------
--- Server version	5.5.60-log
+-- Server version	5.7.19
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -113,68 +111,9 @@ CREATE TABLE `tbworldbegindate` (
 
 LOCK TABLES `tbworldbegindate` WRITE;
 /*!40000 ALTER TABLE `tbworldbegindate` DISABLE KEYS */;
-INSERT INTO `tbworldbegindate` VALUES (1,'yy',1,'2016-12-06',0),(1,'yy',2,'2017-02-22',0),(1,'yy',3,'2017-04-05',0);
+INSERT INTO `tbworldbegindate` VALUES (1,'muzhi',1,'2016-12-06',0),(1,'muzhi',2,'2017-02-22',0),(1,'muzhi',3,'2017-04-05',0);
 /*!40000 ALTER TABLE `tbworldbegindate` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping events for database 'dbdiabloconf'
---
-
---
--- Dumping routines for database 'dbdiabloconf'
---
-/*!50003 DROP PROCEDURE IF EXISTS `insert_time` */;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
-/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
-/*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = utf8 */ ;
-/*!50003 SET character_set_results = utf8 */ ;
-/*!50003 SET collation_connection  = utf8_general_ci */ ;
-/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
-/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
-DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_time`()
-BEGIN
-
-declare i int;
-declare j int;
-
-declare ii varchar(4);
-declare jj varchar(4);
-declare t varchar(10);
-set i=0;
-set j=0;
-delete from log;
-while i<24 do
-	set j = 0;
-    while j < 60 do
-		set ii = i;
-        if i < 10 then
-        set ii= concat('0', i);
-        end if;
-        set jj = j;
-        if j < 10 then
-        set jj=concat('0', j);
-        end if;
-        
-		set t= concat(ii ,':',jj);
-		insert into `dbdiabloconf`.`log` (`value`) values(concat('the value is->', t));
-		insert into tbtemplatebyfiveminutes (`tplFiveMinutes`) value (t);
-		set j = j + 5;   
-    end while;
-    
-set i = i + 1;
-end while;
-
-SELECT * FROM `dbdiabloconf`.`log`;
-
-END ;;
-DELIMITER ;
-/*!50003 SET sql_mode              = @saved_sql_mode */ ;
-/*!50003 SET character_set_client  = @saved_cs_client */ ;
-/*!50003 SET character_set_results = @saved_cs_results */ ;
-/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -185,4 +124,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-24 12:00:54
+-- Dump completed on 2019-01-02  9:57:06
