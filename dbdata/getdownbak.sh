@@ -1,7 +1,7 @@
 #!/bin/bash
 rdir=tempbak
-IP=134.175.127.247
-bakdir=/home/baksqls
+IP=134.175.21.98
+bakdir=/data/logbak
 localdir=D:/workspace/DataCenter/server/dbdata
 
 sftp root@$IP <<EOF

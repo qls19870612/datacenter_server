@@ -199,70 +199,171 @@ var __highchartPluck = function(collection, key) {
 	return res;
 }
 
+// var __mmgridspecPluck = function(data, colmsp, height) {
+// 	var _dom = {}; _data = [], _colm = [], _colmTmp = {};
+// 	var _height = height || 400;
+// 	var colmtmp = function(){};
+// 	colmtmp.prototype = colmsp[1];
+// 	//xdim=days
+// 	//occur=rate
+// 	var ydim = colmsp[0].name, xdim = colmsp[1].title, occur = colmsp[1].name;
+// 	_colm[0] = colmsp[0].title;
+// 	firstColm = colmsp[0].name;
+//
+// 	for(var i=0; i<data.length; i++){
+// 		var ydimv = data[i][ydim];
+// 		var xdimv = data[i][xdim];
+// 		var occurv = data[i][occur];
+// 		var notExist = 1;
+// 		for(var j=0; j<_data.length; j++){
+// 			if(_data[j][ydim] === ydimv){
+// 				var n_occurv = Number(occurv);
+// 				_data[j][xdimv] = isNaN(n_occurv) ? occurv : n_occurv;
+// 				_colmTmp[ydimv].push(xdimv);
+// 				notExist = 0;
+// 				break;
+// 			}
+// 		}
+// 		if(notExist){
+// 			var tmp = {};
+// 			tmp[ydim] = ydimv;
+// 			var n_occurv = Number(occurv);
+// 			tmp[xdimv] = isNaN(n_occurv) ? occurv : n_occurv;
+// 			_data.push(tmp);
+// 			_colmTmp[ydimv] = [];
+// 			_colmTmp[ydimv].push(xdimv);
+// 		}
+// 		var inColm = 0;
+// 		for(var k=0; k<_colm.length; k++){
+// 			if(_colm[k] === xdimv){
+// 				inColm = 1;
+// 				break;
+// 			}
+// 		}
+// 		if(!inColm) _colm.push(xdimv);
+// 	}
+//
+// 	_dom = '<div class="responsive-default" style="height: '+_height+'px; overflow: auto;"><table class="table table-bordered">'+__setTabHeader(_colm) + __setTabBody(_data, _colm, firstColm)+'</table></div>';
+//
+// 	function __setTabHeader(harr){
+// 		var hdata= harr, hstr = '';
+// 		for(var i=0; i<hdata.length; i++){
+// 			hstr += '<th>'+hdata[i]+'</th>';
+// 		}
+// 		return '<thead><tr>'+hstr+'</tr></thead>';
+// 	}
+//
+// 	function __setTabBody(barr, harr, firstColm){
+// 		var bdata= barr, hdata= harr, bstr = '';
+// 		for(var i=0; i<bdata.length; i++){
+// 			var row = bdata[i], rowStr = '<td>'+(row[firstColm] || '')+'</td>';
+// 			for(var j=1; j<hdata.length; j++){
+// 				rowStr += '<td>'+(row[hdata[j]] || '')+'</td>';
+// 			}
+// 			bstr += '<tr>'+rowStr+'</tr>';
+// 		}
+// 		return '<tbody>'+bstr+'</tbody>';
+// 	}
+//
+// 	return _dom;
+// }
 var __mmgridspecPluck = function(data, colmsp, height) {
-	var _dom = {}; _data = [], _colm = [], _colmTmp = {};
-	var _height = height || 400;
-	var colmtmp = function(){};
-	colmtmp.prototype = colmsp[1];
-	var ydim = colmsp[0].name, xdim = colmsp[1].title, occur = colmsp[1].name;
-	_colm[0] = colmsp[0].title, firstColm = colmsp[0].name;
+    var _dom = {}; _data = [], _colm = [], _colmTmp = {},_colMap={},_rowMap={},_rowm=[];
+    var _height = height || 400;
+    var colmtmp = function(){};
+    colmtmp.prototype = colmsp[1];
+    //xdim=days
+    //occur=rate
+    var ydim = colmsp[0].name, xdim = colmsp[1].title, occur = colmsp[1].name;
 
-	for(var i=0; i<data.length; i++){
-		var ydimv = data[i][ydim];
-		var xdimv = data[i][xdim];
-		var occurv = data[i][occur];
-		var notExist = 1;
-		for(var j=0; j<_data.length; j++){
-			if(_data[j][ydim] == ydimv){
-				var n_occurv = Number(occurv);
-				_data[j][xdimv] = isNaN(n_occurv) ? occurv : n_occurv;
-				_colmTmp[ydimv].push(xdimv);
-				notExist = 0;
-				break;
-			}
+    firstColm = colmsp[0].name;
+    var allDataMap={};
+    var i=0;
+    var key;
+    for(i=0; i<data.length; i++){
+        var ydimv = data[i][ydim];
+        var xdimv = data[i][xdim];
+       // var occurv = data[i][occur];
+        if(!_colMap[xdimv])
+		{
+			_colMap[xdimv] = true;
+            _colm.push(xdimv);
 		}
-		if(notExist){
-			var tmp = {};
-			tmp[ydim] = ydimv;
-			var n_occurv = Number(occurv);
-			tmp[xdimv] = isNaN(n_occurv) ? occurv : n_occurv;
-			_data.push(tmp);
-			_colmTmp[ydimv] = [];
-			_colmTmp[ydimv].push(xdimv);
+		if(!_rowMap[ydimv])
+		{
+            _rowMap[ydimv]=true;
+            _rowm.push(ydimv);
 		}
-		var inColm = 0;
-		for(var k=0; k<_colm.length; k++){
-			if(_colm[k] == xdimv){
-				inColm = 1;
-				break;
-			}
+		key=ydimv+"_"+xdimv;
+		allDataMap[key]=data[i];
+    }
+    function getNumber(a)
+	{
+        var xarr = a.match(/\d+/g);
+        if(xarr && xarr.length>0)
+		{
+			return Number(xarr[0]);
 		}
-		if(!inColm) _colm.push(xdimv);
+		return NaN;
+	}
+	if(_colm.length > 0)
+	{
+		if(!isNaN(getNumber(_colm[0])))
+		{
+            _colm.sort(function (a,b) {
+                var anum=getNumber(a);
+                var bnum=getNumber(b);
+                return anum - bnum;
+            });
+		}
+
 	}
 
-	_dom = '<div class="responsive-default" style="height: '+_height+'px; overflow: auto;"><table class="table table-bordered">'+__setTabHeader(_colm) + __setTabBody(_data, _colm, firstColm);+'</table></div>';
 
-	function __setTabHeader(harr){
-		var hdata= harr, hstr = '';
-		for(var i=0; i<hdata.length; i++){
-			hstr += '<th>'+hdata[i]+'</th>';
-		}
-		return '<thead><tr>'+hstr+'</tr></thead>';
-	}
-
-	function __setTabBody(barr, harr, firstColm){
-		var bdata= barr, hdata= harr, bstr = '';
-		for(var i=0; i<bdata.length; i++){
-			var row = bdata[i], rowStr = '<td>'+(row[firstColm] || '')+'</td>';
-			for(var j=1; j<hdata.length; j++){
-				rowStr += '<td>'+(row[hdata[j]] || '')+'</td>';
+	var j=0;
+    for(i=0; i<_rowm.length; i++){
+    	for(j=0;j<_colm.length;j++)
+		{
+			key = _rowm[i] + "_" + _colm[j];
+			var data= allDataMap[key];
+			if(data)
+			{
+				_data.push(data)
 			}
-			bstr += '<tr>'+rowStr+'</tr>';
+			else {
+				var obj={};
+				obj[firstColm]=_rowm[i];
+				obj[occur]=0;
+				obj[xdim]=_colm[j];
+				_data.push(obj)
+			}
 		}
-		return '<tbody>'+bstr+'</tbody>';
-	}
+    }
 
-	return _dom;
+
+    _dom = '<div class="responsive-default" style="height: '+_height+'px; overflow: auto;"><table class="table table-bordered">'+__setTabHeader(_colm) + __setTabBody(_data, _colm, firstColm)+'</table></div>';
+
+    function __setTabHeader(harr){
+        var hdata= harr, hstr = '';
+        for(var i=0; i<hdata.length; i++){
+            hstr += '<th>'+hdata[i]+'</th>';
+        }
+        return '<thead><tr>'+hstr+'</tr></thead>';
+    }
+
+    function __setTabBody(barr, harr, firstColm){
+        var bdata= barr, hdata= harr, bstr = '';
+        for(var i=0; i<bdata.length; i++){
+            var row = bdata[i], rowStr = '<td>'+(row[firstColm] || '')+'</td>';
+            for(var j=1; j<hdata.length; j++){
+                rowStr += '<td>'+(row[hdata[j]] || '')+'</td>';
+            }
+            bstr += '<tr>'+rowStr+'</tr>';
+        }
+        return '<tbody>'+bstr+'</tbody>';
+    }
+
+    return _dom;
 }
 
 

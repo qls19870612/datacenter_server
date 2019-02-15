@@ -1,12 +1,17 @@
 #!/bin/bash
-sftp root@192.168.1.99 <<EOF
-cd /usr/local/server/php_remote_web/datacenter/Public/
+#put -r ./report/sp/general/js/realtime_recharge_curves.js
+#ip=134.175.127.247
+ip=134.175.21.98
+sftp root@$ip <<EOF
+cd /data/project/server/php_web/datacenter/Public/
 lcd D:/workspace/DataCenter/server/datacenter/Public/
-put -r ./index.php
+put -r ./report/resource/js/parser.js
 exit
 close
 bye
 EOF
-ssh root@192.168.1.99
+
+ssh -tt root@$ip<<EOF
 service httpd restart
 exit
+EOF

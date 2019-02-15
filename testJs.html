@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test JS</title>
+</head>
+
+<body>
+
+<div id="contenta">a</div>
+<script language="JavaScript">
+
+    function getNumber(a)
+    {
+        var xarr = a.match(/\d+/g);
+        if(xarr && xarr.length>0)
+        {
+            return xarr[0];
+        }
+        return 0;
+    }
+    function sortArr()
+    {
+
+        _colm = ["b2","b1","b5","b0a"];
+        _colm.sort(function (a,b) {
+            var anum=getNumber(a);
+            var bnum=getNumber(b);
+            return anum - bnum;
+        });
+        return _colm.toString();
+    }
+
+    var t = sortArr();
+    var d =document.getElementById("contenta");
+    d.innerText = t;
+
+</script>
+</body>
+</html>

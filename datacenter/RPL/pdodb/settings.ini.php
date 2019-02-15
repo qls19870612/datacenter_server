@@ -1,7 +1,7 @@
 ;<?php return; ?>
 [SQL]
-host = '10.66.203.188'
+host = '134.175.127.247'
 user = 'root'
 port = 3306
-password = 'ljam5p3i9qy'
+password = 'wjssqlmm'
 dbname = 'datacenter'

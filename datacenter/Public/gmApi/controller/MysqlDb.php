@@ -4,15 +4,15 @@ class MysqlDb {
     static public $serverConfig = array(
         'test' => array(
             'log' => array(
-                'host' => '127.0.0.1',
+                'host' => '134.175.127.247',
                 'user' => 'root',
-                'password' => 'ssssss',
+                'password' => 'wjssqlmm',
                 'port' => 3306,
             ),
             'result' => array(
-                'host' => '127.0.0.1',
+                'host' => '134.175.127.247',
                 'user' => 'root',
-                'password' => 'ssssss',
+                'password' => 'wjssqlmm',
                 'port' => 3306,
             )
         )

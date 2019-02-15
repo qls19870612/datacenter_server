@@ -7,7 +7,7 @@
 		'title' => '国内其他后台',
 		'items' => array(
             array(
-				'title' => '天龙八部',
+				'title' => '少年刀剑笑',
 				'icon' => 'images/game_logo/large/tlbb.jpg',
 				'link' => '#'
 			),
@@ -22,7 +22,7 @@
 		'title' => '海外后台',
 		'items' => array(
 			array(
-				'title' => '天龙八部(台湾)',
+				'title' => '少年刀剑笑(台湾)',
 				'icon' => 'images/game_logo/large/tlbb.jpg',
 				'link' => '#'
 			),

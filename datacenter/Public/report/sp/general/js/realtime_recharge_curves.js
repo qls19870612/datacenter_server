@@ -9,7 +9,7 @@ var _stockCharts = {'recharge':{
 	'case':'#Recharge',
 	'sql_id':716,
 	'sql_key':'realtime_recharge_curves',
-	'time_axis':'dtstattime',
+	'time_axis':'dtStatDate',
 	'series' : [{
 			'name' : '基准时间(元)',
 			'dataVal' : 'aHourRecharge',

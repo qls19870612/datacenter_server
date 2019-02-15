@@ -1,9 +1,9 @@
 #!/bin/bash
-rp=/home/baksql/
+rp=/data/logbak
 p=`pwd`
 p=$(echo d:/${p:3})
 echo $p
-sftp root@192.168.1.99 <<EOF
+sftp root@134.175.21.98 <<EOF
 cd ${rp}
 lcd ${p}
 put -r -P ./*.sh

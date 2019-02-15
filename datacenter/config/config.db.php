@@ -11,19 +11,19 @@ set_time_limit(600);
 $GLOBALS['DB'] = array(
     'Mysql' => array(
         'driver' => 'mysqli',
-        'Host' => '127.0.0.1',
+        'Host' => '134.175.127.247',
         'Port' => 3306,
         'User' => 'root',
-        'Password' => '123456',
+        'Password' => 'wjssqlmm',
         'DBName' => 'datacenter',
         'Charset' => 'utf8'
     ),
 	'diablo' => array(
         'driver' => 'mysqli',
-        'Host' => '127.0.0.1',
+        'Host' => '134.175.127.247',
         'Port' => 3306,
         'User' => 'root',
-        'Password' => '123456',
+        'Password' => 'wjssqlmm',
         'DBName' => 'dbdiablomuzhiresult',
         'Charset'=>'utf8'
 ));
